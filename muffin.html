@@ -1,0 +1,142 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: muffin.html
+GUI Assignment: Creating Your First Web Page
+
+Description: 1 of 4 branches individual recipe pages (Muffins). Same format as other pages.
+Title centered at top of page.2 containers(divs). Left side of page contains a bio 
+of the recipe, followed by the steps (in unordered list). Right side contains 
+a table of the ingredient list and amounts, followed by photo(s) of the food.
+HTML entities are used for fractions and in some symbols of text.
+-->
+<!DOCTYPE html>
+<html lang="en">   <!--Language: English-->
+    <head>
+        <meta charset="utf-8">  
+        <title>Muffin Recipe</title>   <!--Title of my page  -->
+        <link rel="stylesheet" href="css/style.css"> <!--  Linking my style sheet  -->
+    </head>
+
+<body>
+
+    <!-- title of page in header (h1), with class adjustments -->
+    <h1 class="rec_title">Protein Pumpkin Muffins</h1>  
+
+    <!-- Same class and ul used from index.html but made into one home button to efficiently reuse code. -->
+    <ul class="nav">  
+        <li><a href="index.html">Home</a></li>
+    </ul>  
+
+    <!-- Container (div) on left side of page containing background recipe info and an unordered list of the recipe steps in bullets -->
+    <div class="left_container">
+
+        <h2 class="r_headers">Recipe</h2>
+
+        <p>
+            I like to make this recipe a lot during the fall, as I personally love pumpkin-flavored foods.
+             I always look for a dessert that is not super unhealthy but tastes sweet and has health benefits.
+              These muffins are packed with high fiber, protein, antioxidants, and vitamins from the pumpkin purée.
+               Some beneficial vitamins include: vitamin A, C, and E. Pumpkin spice also has healthy spices such
+               as cinnamon, nutmeg, ginger, cloves, and allspice in it. These spices have health benefits, including
+               anti-inflammatory properties, blood sugar regulation, and aided digestion, especially from the 
+               cinnamon and ginger.
+        </p>
+
+        <h3 class="r_headers">Steps</h3>
+
+        <ul id="rec_list">  
+            <li>Step 1: Pre-heat your oven to 350&deg;F.
+            </li>
+            <li>Step 2: Blend all the dry ingredients in a medium sized bowl, until there is a fine flour-like texture, this
+                includes the oat flour, protein powder, baking soda/powder, salt, and pumpkin spice.
+            </li>
+            <li>Step 3: In another medium sized bowl, mix together all of the wet ingredients, like the milk, purée,
+                maple syrup, eggs, vanilla extract.
+            </li>
+            <li>Step 4: Slowly add the dry ingredients to the wet ingredients bowl in intervals, and fold it in. Don't do
+                it all at once as it will be harder to blend. Add Majority of the chocolate/white chips into the final mixture.
+                Remember to leave some to top the muffins.
+            </li>
+            <li>Step 5: Take a greased muffin pan and pour in the mixture. Top the muffins with the extra chips you previously
+                saved. Place the pan in the oven and leave in for 35-40 minutes. Stick a knife into the muffins to see if they
+                are cooked. If they come out without any batter than they are finished. Enjoy!
+            </li>
+            <li>Step 5: Add all the ingredients together. Take the cooked bulgur which should be cooled 
+                now and add it to the bowl, along with the parsley, mint, and onions. Finally, add your dressing mixture 
+                into the bowl and mix it around until it is evenly coated. It is best to wait about 10 minutes before 
+                serving this dish as it lets the flavors settle. You can eat it immediately, and store it in the fridge when done.</li>
+        </ul>
+        
+    </div>
+
+<!-- Right side of screen in container, containing an HTMl table and linked img files from images folder, all images taken by me -->
+    <div class="right_container">
+
+        <h4 class="r_headers">Ingredient List</h4>
+
+        <div class="t-mod">    <!-- class adjustments to change appearance of table, described in css comments-->
+            <table>    
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Oat Flour</td>
+                    <td>2 cups</td>  
+                </tr>
+                <tr>
+                    <td>Vanilla Protein Powder</td>
+                    <td>&frac12; cup</td>
+                </tr>
+                <tr>
+                    <td>Baking Soda</td>
+                    <td>1 tsp</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>&frac12; tsp</td>
+                </tr>
+                <tr>
+                    <td>Baking Powder</td>
+                    <td>&frac12; tsp</td>
+                </tr>
+                <tr>
+                    <td>Pumpkin Pie Spice</td>
+                    <td>1 tsp</td>
+                </tr>
+                <tr>
+                    <td>Pumpkin Pur&eacute;e</td>  
+                    <td>1 &frac12; cups</td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Maple Syrup</td>
+                    <td>&frac14; cup</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>&frac13; cup</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Exract</td>
+                    <td>2 tsp</td>
+                </tr>
+                <tr>
+                    <td>Chocolate/White Chips</td>
+                    <td>&frac12; cup</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Linked image from images folder taken by me -->
+        <img src="images/muffin_top.png" alt="A Topview of Muffins image">
+        <img src="images/muffin_side.png" alt="A Sideview of Muffins image">
+
+    </div>
+
+</body>
+</html>

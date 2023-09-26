@@ -1,0 +1,210 @@
+/* 
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Description: File for all of the styling on my HTMl pages, used classes and ids for the 
+html tags.*/
+
+/* HOME PAGE  */
+/* title text "Rami's Recipes" specifications*/
+.title{                            
+    color: black;
+    font-size: 30px;
+    font-family: papyrus;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+/* Chef hat image dimensions*/
+.title img{
+    width:60px;
+    margin-right: 10px;
+}
+
+/* Takes the bullets off traditional list and alignment to look like tab-panel*/
+.nav{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* width and display modifications to list */
+.nav li {
+    width:18%;
+    margin-left: 10px;
+    margin: 0px;
+    display: inline-block;
+
+}
+
+/* changing properties of individual items in the list (text and box background) */
+.nav li a{
+    background-color: darkred;
+    color:white;
+    padding: 5% 15%;
+    text-align: center;
+    display:block;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Adds hover color change to each button-link */
+.nav li a:hover{
+    background-color: brown;
+}
+
+/* Moves my introduction paragraph to the left of my home page in contained box*/
+.intro_container {
+    width: 32%; 
+    margin: 10px;   /*Dimensions..*/
+    margin-left: 14%;
+    float: left;   
+    background-color: lightgray; /*box color*/
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 10px /*makes it round*/
+}
+
+/* Changing font size and font in header of container */
+.intro_container h2{
+    font-size: 40px;
+    font-family: papyrus;   
+
+}
+
+/* changing paragraph font, spacing and size */
+.intro_container p{
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;  /*Makes text double spaced*/
+
+}
+
+/* Container for the images on home with dimensions, etc */
+.image_container{
+    width: 37%; 
+    margin: 10px;   /*Dimensions..*/
+    margin-right:14%;
+    float: right; 
+    background-color: lightgray;  /*box color*/
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;    /*to align the pictyres in that div (centered)*/
+}
+
+/* dimensions and borders for the images in container */
+.image_container img{
+    border-radius: 10px;  /*rounding*/
+    border: 2px solid;  /*border of images*/
+    width: 400px;  /*Dimensions. standard 400x400 for all my images to make consistent*/
+    height: 400px;
+    margin: 5px;
+
+}
+
+/* changing overviewed recipe/steps list font, spacing and size */
+#rec_list{
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2; /*double space*/
+}
+
+/* -------------------------------------------------------------- */
+/* RECIPE PAGES (INDIVIDUAL) */
+
+/* Centering Individual Recipe Title + dimensions*/
+.rec_title{
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 5%;  /*to add spacing*/
+    font-family:'Lucida Sans';
+}
+
+/* Used for Recipe instructions/information to format on left page cleanly,
+same concept as home page just tweaked a little for the rest of the pages */
+.left_container {
+    width: 45%;  
+    margin: 10px;   /*Dimensions..*/
+    margin-left: 14%;
+    float: left; 
+    background-color: lightgray;   /*box color*/
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 10px   /*round edges*/
+}
+
+.left_container p{
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;  /*double space*/
+
+}
+
+/* Used for Recipe Ingredient tables/images to format on right page cleanly,
+same concept as home page just tweaked a little for the rest of the pages */
+.right_container{
+    width: 25%; 
+    margin: 10px;   /*Dimensions..*/
+    margin-right:14%;
+    float: right; 
+    background-color: lightgray;
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* To make the images on the branched recipe pages the same consistent size */
+.right_container img{
+    border-radius: 10px;
+    border: 2px solid white;
+    margin:10px;
+    width: 320px;   /*standard 320x320 for imgs*/
+    height: 320px;
+}
+
+/* Modifications to table  */
+.t-mod table {
+    border-collapse: collapse;  /*Puts adjacent borders into a single one..*/
+    width: 100%;
+    background: linear-gradient(to bottom, #f8f8f8, #e2e2e2);   /*bottom to top of background color blended*/
+    border: 2px solid;  
+    border-color:  #ccc;
+    border-radius: 10px;  
+    margin-bottom: 50px;   /*make space*/
+}
+
+/* Text modifications in table header and rows (teXT) */
+.t-mod th, .t-mod td {
+    padding: 10px;
+    text-align: left;
+    font-family: Arial;
+
+}
+
+/* Colors for table header */
+.t-mod th {
+    background-color: darkred; 
+    color: white; 
+    
+}
+
+/* To make color of the even rows alternate, makes it look more appealing. */
+.t-mod tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.t-mod tr:hover {
+    background-color: #ddd; 
+}
+
+/* Changing size/font of headers within page */
+.r_headers{
+    font-size: 35px;
+    font-family: papyrus;
+}

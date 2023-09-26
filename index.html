@@ -1,0 +1,100 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: index.html
+GUI Assignment: Creating Your First Web Page
+
+Description: I created a recipe page with a home page and multiple pages per recipe.
+The home page includes a title and links styled as a tab view to branch to each new page.
+The page is split to 2 containers(divs), one containing background information and 
+the other containing linked images of the other recipes. Uses a unordered list for the links
+and overview of recipes at the bottom.
+
+
+All of the side pages branched from main page follow the same html and css structure
+(fries.html, muffin.html, nachos.html, salad.html)
+Specifics of styling is in the comments of my style.css file (from the classes and ids in the htmls)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">   <!--Language: English-->
+    <head>
+        <meta charset="utf-8">  
+        <title>Rami's Recipes</title>   <!--Title of my page  -->
+        <link rel="stylesheet" href="css/style.css"> <!--  Linking my style sheet  -->
+    </head>
+<body>
+
+    <div class="title">   <!--attached class for my title (div because with img)-->
+        <h1>Rami's Recipes</h1>    
+        <img src="images/hat.png" alt="A hat image"> 
+        <!--Used chef hat stock img from: https://www.istockphoto.com/vector/cartoon-chef-hat-gm926040190-254105710 -->
+    </div>
+
+<!-- Images all taken by me below -->
+    <ul class="nav">  <!-- class nav adjusts style of list into clickable panels as links-->
+        <li><a href="salad.html">Tabbouleh</a></li>
+        <li><a href="muffin.html">Pumpkin Muffins</a></li>
+        <li><a href="fries.html">Loaded Fries</a></li>
+        <li><a href="nachos.html">Topped Nachos</a></li>
+    </ul>
+
+<!-- container of background paragraph and overview of the recipes -->
+    <div class="intro_container">
+
+        <h2>Background</h2>
+
+        <p>
+            Welcome to Rami’s Delicious and Healthy Recipe page!
+            I'm Rami and I am passionate about creating recipes that not only taste good, but are good for you. 
+            All the recipes you will find are healthier versions of common dishes that I've recreated. 
+            I like to make healthier versions of foods that are low in fat/calories, and high in protein. 
+            I also included a unique Lebanese salad that my mom made throughout my childhood. 
+            With these recipes you can eat tasty food feeling guilt free. 
+            In my experience, going out to eat would always make me feel regret, as a lot of food outside is 
+            highly processed and cooked with a lot of seed oils. Such small amounts of foods would be so high in calories due to high fat 
+            and added sugar content. The solution to this is to create foods that are high in volume and lower in calories. 
+            Throughout the summer and fall I have experimented with different ingredients and ideas to make these. 
+            I would frequently eat these as they have helped me lose fat and gain muscle. **All recipes
+            require basic kitchen supplies and appliances such as: Oven, Stove, Air Fryer.
+        </p>
+
+<!-- Overview of the recipes on the site, using unordered list -->
+        <h2>Overview</h2>
+
+        <ul id="rec_list">  
+            <li>Protein Pumpkin Muffins</li>
+            <li>Topped Nachos</li>
+            <li>Loaded Chicken Cheese Fries</li>
+            <li>Tabbouleh (Lebanese Salad)</li>
+        </ul>
+    </div>
+    
+<!-- Images of Recipes to Display on Home in container -->
+<!-- linked png files in my images folder -->
+<div class="image_container">
+    <img src="images/muffin_top.png" alt="A Topview of Muffins image">
+    <img src="images/nachos.png" alt="A sheet of Nachos image">
+    <img src="images/fries.png" alt="A serving of Loaded Fries iamge">
+    <img src="images/salad.png" alt="A bowl of salad image">
+
+</div>
+<!-- CSS Certificates -->
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<!-- CSS Certificates -->
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+        </a>
+    </p>
+</body>
+</html>

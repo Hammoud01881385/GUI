@@ -1,0 +1,137 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: salad.html
+GUI Assignment: Creating Your First Web Page
+
+Description: 1 of 4 branches individual recipe pages (Tabbouleh salad). Same format as other pages.
+Title centered at top of page.2 containers(divs). Left side of page contains a bio 
+of the recipe, followed by the steps (in unordered list). Right side contains 
+a table of the ingredient list and amounts, followed by photo(s) of the food.
+HTML entities are used for fractions and in some symbols of text.
+-->
+<!DOCTYPE html>
+<html lang="en">   <!--Language: English-->
+    <head>
+        <meta charset="utf-8">  
+        <title>Tabbouleh Recipe</title>   <!--Title of my page  -->
+        <link rel="stylesheet" href="css/style.css"> <!--  Linking my style sheet  -->
+
+    </head>
+
+<body>
+
+    <!-- title of page in header (h1), with class adjustments -->
+    <h1 class="rec_title">Tabbouleh</h1>    
+
+    <!-- Same class and ul used from index.html but made into one home button to efficiently reuse code. -->
+    <ul class="nav">  
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <!-- Container (div) on left side of page containing background recipe info and an unordered list of the recipe steps in bullets -->
+    <div class="left_container">
+
+        <h2 class="r_headers">Recipe</h2>
+
+        <p>
+            Tabbouleh is a traditional Middle Eastern dish that originated in Lebanon. 
+            It is a salad mainly consisting of chopped parsley, tomatoes, and bulgur wheat. 
+            As a Lebanese American this dish is made a lot in my family. 
+            My mom made Tabbouleh a lot throughout my childhood, it was always one of my favorite foods. 
+            Tabbouleh is a refreshing, colorful and filling salad packed with a lot of healthy ingredients and nutrients. 
+            One of the core ingredients, bulgur wheat, is a whole grain that is made from cracked wheat kernels 
+            that have been partially boiled and dried. It is what gives the salad high fiber, protein, iron and magnesium. 
+            The variety of ingredients give Tabbouleh rich nutrients, such as vitamin A, C, K, folate, and potassium which 
+            can help things like blood clotting and bone health. Another health benefit of tabbouleh is that it has 
+            anti-inflammatory properties that can help reduce inflammation in the body and reduce your risk of 
+            chronic diseases. Overall, a very healthy and delicious food to make.
+        </p>
+
+        <h3 class="r_headers">Steps</h3>
+
+        <ul id="rec_list">  
+
+            <li>Step 1: Rinse the bulgur wheat with a mesh strainer under cold water. Take a pot and bring a cup of 
+                water to a boil. You want the ratio of water to bulgur to be 2:1. Once boiling, add the rinsed bulgur 
+                and cover the pot. Reduce the heat to low for about 10-15 minutes or when the bulgur absorbs the water. 
+                Once cooked, remove it from the heat and let it cool for 15-20 minutes.</li>
+            <li>Step 2:  Dice your cucumber and tomato into very small pieces with a sharp knife. Toss them into a medium 
+                sized bowl and add ½ a teaspoon of salt. Stir it around and let the mixture rest for about 10 minutes.</li>
+            <li>Step 3: Rinse your parsley, mint and onion under cold water. Pat these ingredients down with a paper towel 
+                to dry them. Cut the parsley, mint, and onion into fine pieces. Now add them to the same medium sized bowl 
+                with the tomatoes and cucumbers and stir.</li>
+            <li>Step 4: Take the flat side of a chef knife to smash the garlic. Now take away the skin of the clove. 
+                Finely mince the garlic as small as you can. In a small cup add ⅓ cup of olive oil and 3 tablespoons of 
+                lemon juice, the remaining ½ teaspoon of salt, and your minced garlic. Whisk this all together until it is evenly mixed.</li>
+            <li>Step 5: Add all the ingredients together. Take the cooked bulgur which should be cooled 
+                now and add it to the bowl, along with the parsley, mint, and onions. Finally, add your dressing mixture 
+                into the bowl and mix it around until it is evenly coated. It is best to wait about 10 minutes before 
+                serving this dish as it lets the flavors settle. You can eat it immediately, and store it in the fridge when done. Enjoy!</li>
+        </ul>
+
+        
+    </div>
+<!-- Right side of screen in container, containing an HTMl table and linked img files from images folder, all images taken by me -->
+    <div class="right_container">
+
+        <h4 class="r_headers">Ingredient List</h4>
+
+        <div class="t-mod">    <!-- class adjustments to change appearance of table, described in css comments-->
+            <table>    
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Bulgar wheat</td>
+                    <td>&frac12; cup</td>  
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td>1 (med)</td>
+                </tr>
+                <tr>
+                    <td>Cucumber</td>
+                    <td>1 (med/small)</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1 tsp</td>
+                </tr>
+                <tr>
+                    <td>Parsley</td>
+                    <td>3 bunches</td>
+                </tr>
+                <tr>
+                    <td>Mint</td>
+                    <td>&frac13; cup</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>&frac13; cup (chopped)</td>
+                </tr>
+                <tr>
+                    <td>Olive oil</td>
+                    <td>&frac13; cup</td>
+                </tr>
+                <tr>
+                    <td>Lemon Juice</td>
+                    <td>3 tbsp</td>
+                </tr>
+                <tr>
+                    <td>Garlic clove</td>
+                    <td>1 (med)</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Linked image from images folder taken by me -->
+        <img src="images/salad.png" alt="A bowl of salad image">
+
+    </div>
+
+
+
+</body>
+</html>

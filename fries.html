@@ -1,0 +1,131 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: fries.html
+GUI Assignment: Creating Your First Web Page
+
+Description: 1 of 4 branches individual recipe pages (Fries). Same format as other pages.
+Title centered at top of page.2 containers(divs). Left side of page contains a bio 
+of the recipe, followed by the steps (in unordered list). Right side contains 
+a table of the ingredient list and amounts, followed by photo(s) of the food.
+HTML entities are used for fractions and in some symbols of text.
+-->
+<!DOCTYPE html>
+<html lang="en">   <!--Language: English-->
+    <head>
+        <meta charset="utf-8">  
+        <title>Fries Recipe</title>   <!--Title of my page  -->
+        <link rel="stylesheet" href="css/style.css"> <!--  Linking my style sheet  -->
+    </head>
+
+<body>
+    <!-- title of page in header (h1), with class adjustments -->
+    <h1 class="rec_title">Loaded Fries</h1>    
+
+    <!-- Same class and ul used from index.html but made into one home button to efficiently reuse code. -->
+    <ul class="nav">  
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <!-- Container (div) on left side of page containing background recipe info and an unordered list of the recipe steps in bullets -->
+    <div class="left_container">
+
+        <h2 class="r_headers">Recipe</h2>
+
+        <p>
+            Fries are one of my favorite things to eat, but they aren't the healthiest. They are deep-fried in oil 
+            making them high in calories and trans/saturated fat. There is also a lot of salt in most fries
+            you buy from fast food restaurants. In this recipe, an air-fryer is used which significantly 
+            reduces the calories and the amount of oil needed to make them. Olive oil is a great alternative
+            to other commonly used seed oils, as it can reduce inflammation in the body and contains 
+            antioxidants. They still come out crispy on the outside and soft on the inside from the convection 
+            heating in the air fryer. I also like to add toppings on the fries like chicken, for protein 
+            and guacamole for healthy fats. Cheese also adds some protein, healthy fat and nutrients like calcium, B12, zinc, etc.
+        </p>
+
+        <h3 class="r_headers">Steps</h3>
+
+        <ul id="rec_list">  
+            <li>Step 1: Take a medium sized bowl and fill it with cold water and ice; you will use this for the potatos.
+                Take your potatoes and use a knife or peeler to take the skin off. Then cut them into strips any size you 
+                would prefer. Place them in the ice water.
+            </li>
+            <li>Step 2: When you are ready to use the potatos, put them into another bowl, and add a tablespoon 
+                of olive oil, and all of your spices (salt, pepper, garlic powder, onion powder). Mix thoroughly with your hands
+                to coat all of the fries.
+            </li>
+            <li>Step 3: Take a metal sheet or basket (that the air-fryer comes with) and dump your fries into it. Now add your 
+                shredded chicken on top of the fries making it distributed evenly. After the chicken is placed do the same with
+                the shredded cheese.
+            </li>
+            <li>Step 4: Get your air-fryer ready and set it to 370&deg;F; it should only take a few minutes to heat up so turn it
+                on when you are ready to cook. Put your fries into the oven and leave them in for about 15 minutes. Take them out 
+                when they are crispy to your liking.
+            </li>
+            <li>Step 5: Now that they are cooked put them into a separate plate and top with a couple tablespoons of guacamole. You 
+                can also add any other toppings that you prefer to add, this is just what I did. Enjoy!
+            </li>
+
+        </ul>
+
+        
+    </div>
+
+<!-- Right side of screen in container, containing an HTMl table and linked img files from images folder, all images taken by me -->
+    <div class="right_container">
+
+        <h4 class="r_headers">Ingredient List</h4>
+
+        <div class="t-mod">    <!-- class adjustments to change appearance of table, described in css comments-->
+            <table>    
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Potatoes</td>
+                    <td>3 (small)</td>  
+                </tr>
+                <tr>
+                    <td>Olive Oil</td>
+                    <td>1 tbsp</td>
+                </tr>
+                <tr>
+                    <td>Black Pepper</td>
+                    <td>&frac12; tsp</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>&frac12; tsp</td>
+                </tr>
+                <tr>
+                    <td>Garlic Powder</td>
+                    <td>&frac14; tsp</td>
+                </tr>
+                <tr>
+                    <td>Onion Powder</td>
+                    <td>&frac14; tsp</td>
+                </tr>
+                <tr>
+                    <td>Shredded Chicken</td>  
+                    <td>&frac12; cup</td>
+                </tr>
+                <tr>
+                    <td>Shredded Mexican Cheese</td>
+                    <td>1 cup</td>
+                </tr>
+                <tr>
+                    <td>Guacamole</td>
+                    <td>2 tbsp</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Linked image from images folder taken by me -->
+        <img src="images/fries.png" alt="A serving of Loaded Fries image">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: (started 9/15/2023, finished 9/25/2023)
+File: nachos.html
+GUI Assignment: Creating Your First Web Page
+
+Description: 1 of 4 branches individual recipe pages (Nachos). Same format as other pages.
+Title centered at top of page.2 containers(divs). Left side of page contains a bio 
+of the recipe, followed by the steps (in unordered list). Right side contains 
+a table of the ingredient list and amounts, followed by photo(s) of the food.
+HTML entities are used for fractions and in some symbols of text.
+-->
+<!DOCTYPE html>
+<html lang="en">   <!--Language: English-->
+    <head>
+        <meta charset="utf-8">  
+        <title>Nachos Recipe</title>   <!--Title of my page  -->
+        <link rel="stylesheet" href="css/style.css"> <!--  Linking my style sheet  -->
+    </head>
+    
+<body>
+
+    <!-- title of page in header (h1), with class adjustments -->
+    <h1 class="rec_title">Topped Nachos</h1>
+
+    <!-- Same class and ul used from index.html but made into one home button to efficiently reuse code. -->
+    <ul class="nav">  
+        <li><a href="index.html">Home</a></li>
+    </ul>    
+
+    <!-- Container (div) on left side of page containing background recipe info and an unordered list of the recipe steps in bullets -->
+    <div class="left_container">
+
+        <h2 class="r_headers">Recipe</h2>
+
+        <p>
+            This is an easy recipe that does not require that much cooking and tastes great. I love
+            to order nachos at Mexican restaurants, which aren't super unhealthy, but they are easy
+            and cheaper to make at home. It simply consists of tortilla chips, shredded chicken, cheese,
+            and your desired toppings. I like to put things like sour cream, salsa, and jalape&ntilde;os,
+            because these are things I usually have in my fridge. However, you can add any toppings you 
+            like.
+        </p>
+
+        <h3 class="r_headers">Steps</h3>
+
+        <ul id="rec_list">  
+            <li>Step 1: Take a metal sheet or basket (that the air-fryer comes with) and dump your chips into it.
+            </li>
+            <li>Step 2: Now add your shredded chicken on top of the chips making it distributed evenly. After 
+                the chicken is placed do the same with the shredded cheese.
+            </li>
+            <li>Step 3: Get your air-fryer ready and set it to 400&deg;F; it should only take a few minutes to heat up so turn it
+                on when you are ready to cook. Put your sheet into the oven and leave them in for about 5 minutes. You just want
+                the cheese to melt and the chicken to be warm, nothing really needs to cook.
+            </li>
+            <li>Step 4: Now that they are cooked put them into a separate plate and drizzle 2 tablespoons of sour cream on top. Do
+                the same with the salsa and/or any other toppings you want to put.
+            </li>
+            <li>Step 5: Take your alape&ntilde;os and dice them into quarter pieces with a knife. Sprinkle them on top of the 
+                nachos and enjoy!
+            </li>
+        </ul>
+
+    </div>
+
+<!-- Right side of screen in container, containing an HTMl table and linked img files from images folder, all images taken by me -->
+    <div class="right_container">
+
+        <h4 class="r_headers">Ingredient List</h4>
+
+        <div class="t-mod">    <!-- class adjustments to change appearance of table, described in css comments-->
+            <table>   
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Tortilla Chips</td>
+                    <td>2 cups</td>  
+                </tr>
+                <tr>
+                    <td>Shredded Mexican Cheese</td>
+                    <td>1 cup</td>
+                </tr>
+                <tr>
+                    <td>Sour Cream</td>
+                    <td>2 tbsp</td>
+                </tr>
+                <tr>
+                    <td>Salsa</td>
+                    <td>3 tbsp</td>
+                </tr>
+                <tr>
+                    <td>Shredded Chicken</td>
+                    <td>&frac12; cup</td>
+                </tr>
+                <tr>
+                    <td>Jalape&ntilde;os</td>
+                    <td>1 tsp</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- Linked image from images folder taken by me -->
+        <img src="images/nachos.png" alt="A sheet of Nachos image">
+
+    </div>
+
+</body>
+</html>
